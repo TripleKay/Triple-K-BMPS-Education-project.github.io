@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Padauk:wght@400;700&display=swap");
+
+/* -------------------------------basic-set-up-------------------------------------   */
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     outline: none;
+     text-decoration: none;
+     list-style: none;
+     font-weight: 600 !important;
+}
+*::selection {
+     color: #fff;
+     background-color: #00a8f1;
+}
+html {
+     text-rendering: optimizeLegibility;
+     overflow-x: hidden;
+     scroll-behavior: smooth;
+}
+body {
+     font-family: "Open Sans", sans-serif !important;
+}
+section {
+     padding: 80px 0px !important;
+}
+/* -------------------------------heading-------------------------------------   */
+h1 {
+     letter-spacing: 1.5px;
+     word-spacing: 5px;
+}
+h2 {
+     color: #2e2e2e;
+     letter-spacing: 1.5px;
+     word-spacing: 5px;
+     text-shadow: 1px 3px 3px #888;
+}
+h4 {
+     font-size: 21px;
+     line-height: 30px;
+}
+/* -------------------------------nav-bar-------------------------------------   */
+header {
+     background-color: #0079be;
+}
+#pop-up-message {
+     right: 50px;
+     bottom: 50px;
+     z-index: 9999;
+}
+.nav-bar {
+     background-color: #0079be;
+}
+.sticky-header .nav-bar .nav-link,
+.nav-bar .nav-link {
+     border: 1px solid transparent;
+     border-radius: 30px;
+     padding: 5px 15px !important;
+     transition: all .3s linear;
+}
+.sticky-header .nav-bar .nav-link:hover{
+     border-color: #00a8f1;
+}
+.nav-bar .nav-link:hover,
+.nav-bar .nav-link:active {
+     border-color:  #fff;
+}
+.bmps-logo-container {
+     width: 80px;
+     height: 90px;
+     background-color: #fff;
+     padding: 5px;
+     border-radius: 0px 0px 20px 20px;
+     display: flex;
+     align-items: center;
+}
+.bmps-logo {
+     width: 100%;
+     height: auto;
+}
+.nav-user-icon {
+     width: 40px;
+     height: 40px;
+     cursor: pointer;
+
+}
+.nav-user-icon i{
+     transition: all .3s linear;
+}
+.nav-user-icon:hover i{
+     color: #00a8f1;
+}
+/* -------------------------------home-section-------------------------------------   */
+.home-section {
+     border-radius: 0px 0px 30px 30px;
+     background-color: #0079be;
+}
+
+.banner-search-bar .form-control:focus {
+     box-shadow: none;
+}
+.contact-section ::placeholder,
+footer ::placeholder,
+.home-section ::placeholder {
+     color: #888 !important;
+     font-weight: lighter;
+}
+
+.navbar-toggler:focus {
+     outline: none;
+}
+.mobile-menu-icon {
+     font-size: 40px;
+     color: #fff;
+}
+/* -------------------------------course-section-------------------------------------   */
+.testimonial-card,
+.team-card,
+.blog-card,
+.course-card,
+.book-card {
+     border-radius: 10px;
+     margin-bottom: 30px;
+}
+.testimonial-card,
+.blog-card .blog-title,
+.course-card .course-title,
+.book-card .book-title{
+    transition: .2s linear;
+}
+.testimonial-card:hover ,
+.blog-card:hover .blog-title,
+.course-card:hover .course-title,
+.book-card:hover .book-title{
+    color: #0079be;
+}
+.blog-img,
+.course-img {
+     border-radius: 10px;
+}
+.instructor {
+     width: 50px;
+     height: 50px;
+     top: -30px;
+}
+.ribbon {
+     /* background-color: #ffe600; */
+     background-color: #00a8f1;
+     color: #fff !important;
+     box-shadow: 0 1px 0px rgba(0, 0, 0, 0.07);
+     border-radius: 0;
+     color: #000;
+     display: block;
+     font-size: 20px;
+     position: absolute;
+     padding: 7px 15px;
+     top: 20px;
+     left: -15px;
+}
+
+.ribbon::after {
+     content: "";
+     position: absolute;
+     top: auto;
+     left: 5px;
+     right: auto;
+     bottom: -10px;
+     background-color: transparent;
+     border: 10px solid transparent;
+     border-bottom: 10px solid #0079be;
+     transform: rotate(45deg);
+     height: 20px;
+     width: 20px;
+}
+.course-title-container {
+     min-height: 70px !important;
+}
+.course-details-btn {
+     transition: all 1s linear;
+}
+
+/* -------------------------------book-section-------------------------------------   */
+.testimonial-section .section-title::before,
+.team-section .section-title::before,
+.blog-section .section-title::before,
+.book-section .section-title::before {
+     content: "";
+     display: inline-block;
+     width: 50px;
+     height: 5px;
+     border: 1px solid #00a8f1;
+     background-color: #00a8f1;
+}
+
+.book-img {
+     max-width: 250px;
+     height: auto;
+     /* owl caruel */
+}
+
+.book-card .ribbon {
+     top: 50px;
+}
+/* -------------------------------owl-cauroal-------------------------------------   */
+.testimonial-container,
+.team-container,
+.blog-container,
+.book-container {
+     margin: auto;
+}
+
+.owl-carousel .testimonial-card,
+.owl-carousel .team-card,
+.owl-carousel .blog-card,
+.owl-carousel .book-card {
+     margin: 15px;
+}
+
+.owl-theme .owl-dots .owl-dot.active,
+.owl-theme .owl-dots .owl-dot:hover,
+.owl-theme .owl-dots .owl-dot:focus {
+     outline: none !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span,
+.owl-theme .owl-dots .owl-dot:focus span {
+     background: #00a8f1;
+}
+.owl-carousel .owl-item img {
+     width: auto;
+}
+/* -------------------------------blog-section-------------------------------------   */
+
+.blog-content {
+     height: 100px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+/* -------------------------------team-section-------------------------------------   */
+.team-overlay {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     left: 15px;
+     top: -95px;
+     transition: 0.3s linear;
+}
+.team-overlay a {
+     width: 40px;
+     height: 40px;
+     margin-bottom: 15px;
+     background-color: #fff;
+     border-radius: 50%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+}
+.team-overlay a:hover,
+.team-overlay a:focus {
+     color: #0079be;
+}
+.team-card:hover .team-overlay {
+     top: 20%;
+}
+/* -------------------------------testimonial-section-------------------------------------   */
+.testimonial-container {
+     padding-bottom: 100px;
+}
+.testimonial-container .owl-dots {
+     position: absolute;
+     right: 0;
+     top: 20%;
+     display: flex;
+     flex-direction: column;
+}
+.testimonial-container .owl-dots .owl-dot span {
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+}
+.testi-quote {
+     top: -20px;
+     left: 10px;
+}
+/* -------------------------------footer-section-------------------------------------   */
+.news-letter-form {
+     margin-top: -230px;
+}
+.footer-container a {
+     transition: all .3s linear;
+}
+.footer-container a:hover{
+   color: #00a8f1 !important;
+     text-decoration: none;
+}
+
+footer {
+     padding: 150px 0px 0px 0px !important;
+     background-color: #232323;
+}
+footer ul hr {
+     background: #333 !important;
+}
+.copy-right {
+     background-color: #282828;
+}
+
+/* .sticky-header {
+     z-index: 9999;
+} */
+.sticky-nav-logo {
+     height: 80px;
+}
+
+/* -------------------------------footer-section-------------------------------------   */
+.blog-detail-section,
+.course-detail-section
+.all-book-section,
+.all-blog-section,
+.all-course-section {
+     padding-bottom: 160px !important;
+}
+.all-book-section .h6,
+.all-book-section h6,
+.all-blog-section .h6,
+.all-blog-section h6,
+.all-course-section .h6,
+.all-course-section h6 {
+     font-size: 13px;
+}
+.all-course-section h4 {
+     font-size: 20px;
+}
+.all-book-section .fa-star,
+.all-course-section .fa-star {
+     font-size: 10px;
+}
+.all-book-section h4,
+.all-blog-section h4 {
+     font-size: 17px;
+}
+.all-blog-section .blog-content {
+     font-size: 15px;
+     height: 90px;
+}
+.all-book-section .book-img {
+     max-width: none;
+     width: 180px;
+}
+
+.single-course-title {
+     letter-spacing: 3px;
+     word-spacing: 1px;
+}
+
+button:focus {
+     box-shadow: none !important;
+}
+/* -------------------------------Responsive-------------------------------------   */
+@media screen and (max-width: 992px) {
+     section {
+          padding: 80px 30px !important;
+     }
+     h1 {
+          letter-spacing: initial;
+          word-spacing: initial;
+     }
+
+     .mobile-nav-container {
+          position: fixed;
+          width: 320px;
+          min-height: 100vh !important;
+          z-index: 3000;
+          top: 0;
+          left: -100%;
+          bottom: 0;
+          background-color: #fff;
+          box-shadow: 0 0.5rem 0.5rem rgb(0 0 0 / 10%) inset !important;
+          border-radius: 0px 0px;
+          transition: 0.3s linear;
+     }
+     .mobile-nav-container.active {
+          left: 0;
+     }
+
+     .mobile-nav .nav-link {
+          color: #2e2e2e !important;
+     }
+     .testimonial-container .owl-dots {
+          top: 45%;
+     }
+     footer {
+          padding: 80px 0px 0px !important;
+     }
+     .footer-container {
+          padding: 0px 30px;
+     }
+     .blog-detail-section,
+     .course-detail-section,
+     .all-book-section,
+     .all-blog-section,
+     .all-course-section {
+          padding-bottom: 200px !important;
+     }
+}
+@media screen and (max-width: 576px) {
+     section {
+          padding: 80px 20px !important;
+     }
+     .section-title {
+          font-size: 30px;
+     }
+     .section-title::before {
+          display: none !important;
+     }
+     .testimonial-container {
+          padding-bottom: 0px;
+     }
+     .testimonial-container .owl-dots {
+          top: 70%;
+     }
+     footer {
+          padding: 80px 0px 0px !important;
+     }
+     .footer-container {
+          padding: 0px 20px;
+     }
+     .blog-detail-section,
+     .course-detail-section,
+     .all-book-section,
+     .all-blog-section,
+     .all-course-section {
+          padding-bottom: 80px !important;
+     }
+     .course-video iframe {
+          height: 185px;
+     }
+     .single-blog-title,
+     .lesson-title {
+          font-size: 15px;
+     }
+}

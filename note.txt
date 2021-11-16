@@ -1,0 +1,29 @@
+BMPS Learning Myanmar
+Online Education
+BMPS stands for Basic Math Programming and Sciences Technical news, Science and literature, Math lessons, It is a treasure trove of computer and technology lessons and more.
+
+
+
+Subscribe to get update and information. Don't worry, we won't send spam!
+
+
+
+
+BMPS stands for Basic Math Programming and Sciences Technical news, Science and literature, Math lessons, It is a treasure trove of computer and technology lessons and more.
+
+
+btn outline
+btn primary
+btn a tag
+team black color #1a212c
+
+error: fontawesome is not working 
+why?: because of using css properties "font-family:-----: " on *{....}
+solution: move css properties "font-family:-----: " to body{...} on css
+
+Expand Your Knowledge & Achieve Your Goal
+Find Your Preferred Courses & Improve Your Skills
+Pick the right category Build your career
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51375.99542131584!2d96.18329012682307!3d16.8489777408653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1949e223e196b%3A0x56fbd271f8080bb4!2sYangon!5e0!3m2!1sen!2smm!4v1636873738949!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
