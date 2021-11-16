@@ -9,17 +9,21 @@
     <link rel="stylesheet" href="vendors/fonts/css/all.css">
     <link rel="stylesheet" href="vendors/owl_carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendors/owl_carousel/owl.theme.default.min.css">
-    
+    <link rel="stylesheet" href="vendors/animate_it/animate.css">
     <link rel="stylesheet" href="resources/css/style.css">
 </head>
 <body>
+<!-- -------------------------------PreLoader------------------------------------  -->
+<div class="d-flex justify-content-center align-items-center bg-primary vw-100 vh-100 position-fixed loader-container">
+  <div class="loader">Loading...</div>
+</div>
 <!-- -------------------------------header------------------------------------  -->
   <header class="container-fluid pb-2">
         <div class="row">
             <div class="container">
                 <div class="row">
                     <div class="col-12 ">
-                        <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-between align-items-center p-0 nav-bar">
+                        <nav class=" navbar navbar-expand-lg navbar-dark d-flex justify-content-between align-items-center p-0 nav-bar wow fadeInDown">
                           
                             <div class="bmps-logo-container">
                                 <img src="resources/img/bmps_logo_1.png" class=" bmps-logo" alt="">
@@ -106,7 +110,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-              <div class="banner-left-container text-white my-md-5 my-xl-5">
+              <div class="banner-left-container text-white my-md-5 my-xl-5 animated slideInLeft ani-delay-1">
                 <h1 class="font-weight-bolder mb-md-4 mb-4">Grow up your skills by online courses with <br class="d-md-none d-none d-xl-block">BMPS</h1>
                 <p class="my-md-4">Find Your Preferred Courses & Improve Your Skills.Just enroll our courses and boost your career in no time</p>
                 <form class=" bg-white d-flex p-1 rounded-pill banner-search-bar">
@@ -117,7 +121,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-              <div class="banner-right-container py-md-2">
+              <div class="banner-right-container py-md-2 animated slideInRight ani-delay-1">
                 <img src="resources/img/banner-image.svg" class="img-fluid" alt="">
               </div>
             </div>
@@ -136,7 +140,7 @@
           <div class="counter-container">
             <div class="row">
               <div class="col-12 col-md-6 col-lg-3 col-xl-3 border-right">
-                <div class=" p-2 d-flex  align-items-center my-2 counter-box">
+                <div class=" p-2 d-flex  align-items-center my-2 counter-box wow bounceInUp ani-delay-3">
                   <div class="w-25 mr-3">
                     <i class="fas fa-users display-4"></i>
                   </div>
@@ -147,7 +151,7 @@
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-3 col-xl-3 border-right">
-                <div class=" p-2 d-flex  align-items-center my-2 counter-box">
+                <div class=" p-2 d-flex  align-items-center my-2 counter-box wow bounceInUp ani-delay-1">
                   <div class="w-25 mx-3">
                     <i class="fas fa-unlock-alt display-4"></i>
                   </div>
@@ -158,7 +162,7 @@
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-3 col-xl-3 border-right">
-                <div class=" p-2 d-flex  align-items-center my-2 counter-box">
+                <div class=" p-2 d-flex  align-items-center my-2 counter-box wow bounceInUp ani-delay-2">
                   <div class="w-25 mx-3">
                     <i class="fas fa-book-reader display-4"></i>
                   </div>
@@ -169,7 +173,7 @@
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-3 col-xl-3">
-                <div class=" p-2 d-flex  align-items-center my-2 counter-box">
+                <div class=" p-2 d-flex  align-items-center my-2 counter-box wow bounceInUp ani-delay-4">
                   <div class="w-25 mx-3">
                     <i class="fas fa-book display-4"></i>
                   </div>
@@ -194,24 +198,24 @@
          <div class="row">
            <div class="col-12">
              <div class="text-center my-3 my-md-5 my-xl-5">
-               <h2 class="font-weight-bold text-uppercase section-title">Our Online Courses</h2>
+               <h2 class="font-weight-bold text-uppercase section-title wow slideInDown">Our Online Courses</h2>
              </div>
            </div>
          </div>
          <div class="row">
            <div class="col-12">
-            <div class="d-flex justify-content-center justify-content-xl-between align-items-center flex-wrap px-2 mt-3 mt-md-5 mt-xl-5 mb-2  course-nav-container">
+            <div class="d-flex justify-content-center justify-content-xl-between align-items-center flex-wrap px-2 mt-3 mt-md-5 mt-xl-5 mb-2  wow fadeInUp ani-delay-1 course-nav-container">
               <div class="course-nav" id="isotope-filters">
-                <button data-filter="*" class="btn btn-outline-primary bg-white text-primary my-2">
+                <button data-filter="*" class="btn text-black-50 filter-btn active my-2">
                   <span>Popular Courses</span>
                 </button>
-                <button data-filter=".Front-End" class="btn my-2">
+                <button data-filter=".Web-Dev" class="btn text-black-50 filter-btn my-2">
                   <span>Web Development</span>
                 </button>
-                <button data-filter=".Back-End" class="btn my-2">
+                <button data-filter=".Mobile-Dev" class="btn text-black-50 filter-btn my-2">
                   <span>Mobile Development</span>
                 </button>
-                <button data-filter=".Javascript" class="btn my-2">
+                <button data-filter=".Javascript" class="btn text-black-50 filter-btn my-2">
                   <span>Javascript</span>
                 </button>
               </div>
@@ -224,9 +228,9 @@
          <div class="row">
            <div class="col-12">
              <div class="course-container my-5">
-               <div class="row">
+               <div class="row isotope-container">
                  <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                   <div class="card shadow position-relative course-card">
+                   <div class="card shadow position-relative wow fadeInUp ani-delay-2 course-card">
                      <div class="">
                        <img src="resources/img/course/webdesign.jpg" class="img-fluid course-img" alt="" srcset="">
                      </div>
@@ -266,8 +270,8 @@
                      
                    </div>
                  </div>
-                 <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                   <div class="card shadow position-relative course-card">
+                 <div class="col-12 col-md-6 col-lg-4 col-xl-4 Web-Dev Javascript">
+                   <div class="card shadow position-relative wow fadeInUp ani-delay-3 course-card">
                      <div class="">
                        <img src="resources/img/course/javascript.png" class="img-fluid course-img" alt="" srcset="">
                      </div>
@@ -306,8 +310,8 @@
                      
                    </div>
                  </div>
-                 <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                   <div class="card shadow position-relative course-card">
+                 <div class="col-12 col-md-6 col-lg-4 col-xl-4 Web-Dev Javascript">
+                   <div class="card shadow position-relative wow fadeInUp ani-delay-4 course-card">
                      <div class="">
                        <img src="resources/img/course/reactjs.jpg" class="img-fluid course-img" alt="" srcset="">
                      </div>
@@ -346,8 +350,8 @@
                      
                    </div>
                  </div>
-                 <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                   <div class="card shadow position-relative course-card">
+                 <div class="col-12 col-md-6 col-lg-4 col-xl-4 Web-Dev">
+                   <div class="card shadow position-relative wow fadeInUp ani-delay-3 course-card">
                      <div class="">
                        <img src="resources/img/course/php.jpg" class="img-fluid course-img" alt="" srcset="">
                      </div>
@@ -386,8 +390,8 @@
                      
                    </div>
                  </div>
-                 <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                   <div class="card shadow position-relative course-card">
+                 <div class="col-12 col-md-6 col-lg-4 col-xl-4 Web-Dev">
+                   <div class="card shadow position-relative wow fadeInUp ani-delay-2 course-card">
                      <div class="">
                        <img src="resources/img/course/laravel.png" class="img-fluid course-img" alt="" srcset="">
                      </div>
@@ -426,8 +430,8 @@
                      
                    </div>
                  </div>
-                 <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                   <div class="card shadow position-relative course-card">
+                 <div class="col-12 col-md-6 col-lg-4 col-xl-4 Mobile-Dev">
+                   <div class="card shadow position-relative wow fadeInUp ani-delay-4 course-card">
                      <div class="">
                        <img src="resources/img/course/flutter.png" class="img-fluid course-img" alt="" srcset="">
                      </div>
@@ -480,7 +484,7 @@
        <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="d-flex justify-content-center flex-wrap justify-content-md-between justify-content-xl-between align-items-center my-5">
+            <div class="d-flex justify-content-center flex-wrap justify-content-md-between justify-content-xl-between align-items-center my-5 wow slideInDown">
               <h2 class="mb-4 mb-xl-0 mb-md-0 font-weight-bold text-uppercase section-title">Popular Books</h2>
               <a href="all_books.html" class="btn btn-primary">View All Books</a>
             </div>
@@ -490,7 +494,7 @@
           <div class="col-12 ">
             <div class="">
               <div class="row owl-carousel owl-theme book-container owl-book-container">
-                <div class="item">
+                <div class="item wow fadeInUpBig ani-delay-1">
                   <div class="card position-relative shadow book-card">
                     <img src="resources/img/book/Book (1).jpg" class="img-fluid book-img m-auto" alt="" srcset="">
                     <div class="course-price font-weight-bolder text-dark ribbon">
@@ -515,7 +519,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item">
+                <div class="item wow fadeInUpBig ani-delay-2">
                   <div class="card position-relative shadow book-card">
                     <img src="resources/img/book/Book (2).png" class="img-fluid book-img m-auto" alt="" srcset="">
                     <div class="course-price font-weight-bolder text-dark ribbon">
@@ -540,7 +544,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item">
+                <div class="item wow fadeInUpBig ani-delay-3">
                   <div class="card position-relative shadow book-card">
                     <img src="resources/img/book/Book (3).png" class="img-fluid book-img m-auto" alt="" srcset="">
                     <div class="course-price font-weight-bolder text-dark ribbon">
@@ -565,7 +569,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item">
+                <div class="item wow fadeInUpBig ani-delay-4">
                   <div class="card position-relative shadow book-card">
                     <img src="resources/img/book/Book (4).png" class="img-fluid book-img m-auto" alt="" srcset="">
                     <div class="course-price font-weight-bolder text-dark ribbon">
@@ -603,7 +607,7 @@
        <div class="container">
          <div class="row">
           <div class="col-12">
-            <div class="d-flex flex-wrap justify-content-center justify-content-md-between justify-content-xl-between align-items-center my-5">
+            <div class="d-flex flex-wrap justify-content-center justify-content-md-between justify-content-xl-between align-items-center my-5 wow slideInDown">
               <h2 class="mb-4 mb-xl-0 mb-md-0 font-weight-bold text-uppercase section-title">Blogs & News</h2>
               <a href="all_blog.html" class="btn btn-primary">View All Blogs</a>
             </div>
@@ -613,7 +617,7 @@
            <div class="col-12">
              <div class="">
                <div class="row owl-carousel owl-theme blog-container owl-blog-container">
-                 <div class="item">
+                 <div class="item wow fadeInUpBig ani-delay-1">
                    <div class="card shadow blog-card">
                      <img src="resources/img/blog/blog (1).jpg" class="img-fluid blog-img" alt="" srcset="">
                      <div class="card-body ">
@@ -634,7 +638,7 @@
                    </div>
                 
                  </div>
-                 <div class="item">
+                 <div class="item wow fadeInUpBig ani-delay-2">
                    <div class="card shadow blog-card">
                      <img src="resources/img/blog/blog (2).jpg" class="img-fluid blog-img" alt="" srcset="">
                      <div class="card-body ">
@@ -655,7 +659,7 @@
                    </div>
                 
                  </div>
-                 <div class="item">
+                 <div class="item wow fadeInUpBig ani-delay-3">
                    <div class="card shadow blog-card">
                      <img src="resources/img/blog/blog (3).jpg" class="img-fluid blog-img" alt="" srcset="">
                      <div class="card-body ">
@@ -676,7 +680,7 @@
                    </div>
                 
                  </div>
-                 <div class="item">
+                 <div class="item wow fadeInUpBig ani-delay-4">
                    <div class="card shadow blog-card">
                      <img src="resources/img/blog/blog (4).jpg" class="img-fluid blog-img" alt="" srcset="">
                      <div class="card-body ">
@@ -710,7 +714,7 @@
        <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="d-flex justify-content-center justify-content-md-between justify-content-lg-between justify-content-xl-between align-items-center my-5">
+            <div class="d-flex justify-content-center justify-content-md-between justify-content-lg-between justify-content-xl-between align-items-center my-5 wow slideInRight">
               <h2 class="font-weight-bold text-uppercase section-title">BMPS TEAM</h2>
             </div>
           </div>
@@ -719,7 +723,7 @@
            <div class="col-12">
              <div class="">
               <div class="row owl-carousel owl-theme team-container owl-team-container">
-                <div class="item">
+                <div class="item wow fadeInUpBig ani-delay-1">
                   <div class="card overflow-hidden shadow team-card">
                     <img src="resources/img/Team/teacher (1).jpg" class="img-fluid" alt="" srcset="">
                     <div class="card-body bg-dark text-center d-flex flex-column justify-content-center align-items-center">
@@ -739,7 +743,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item">
+                <div class="item wow fadeInUpBig ani-delay-2">
                   <div class="card overflow-hidden shadow team-card">
                     <img src="resources/img/Team/teacher (2).jpg" class="img-fluid" alt="" srcset="">
                     <div class="card-body bg-dark text-center d-flex flex-column justify-content-center align-items-center">
@@ -759,7 +763,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item">
+                <div class="item wow fadeInUpBig ani-delay-3">
                   <div class="card overflow-hidden shadow team-card">
                     <img src="resources/img/Team/teacher (3).jpg" class="img-fluid" alt="" srcset="">
                     <div class="card-body bg-dark text-center d-flex flex-column justify-content-center align-items-center">
@@ -779,7 +783,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item">
+                <div class="item wow fadeInUpBig ani-delay-4">
                   <div class="card overflow-hidden shadow team-card">
                     <img src="resources/img/Team/teacher (5).jpg" class="img-fluid" alt="" srcset="">
                     <div class="card-body bg-dark text-center d-flex flex-column justify-content-center align-items-center">
@@ -799,7 +803,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item">
+                <div class="item wow fadeInUpBig ani-delay-5">
                   <div class="card overflow-hidden shadow team-card">
                     <img src="resources/img/Team/teacher (4).jpg" class="img-fluid" alt="" srcset="">
                     <div class="card-body bg-dark text-center d-flex flex-column justify-content-center align-items-center">
@@ -832,7 +836,7 @@
        <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="d-flex justify-content-center justify-content-md-between justify-content-lg-between justify-content-xl-between  align-items-center my-5">
+            <div class="d-flex justify-content-center justify-content-md-between justify-content-lg-between justify-content-xl-between  align-items-center my-5 wow slideInRight">
               <h2 class="font-weight-bold text-uppercase section-title">Testimonial</h2>
             </div>
           </div>
@@ -841,7 +845,7 @@
            <div class="col-12">
              <div class="">
                <div class="row owl-carousel owl-theme testimonial-container owl-testi-container">
-                 <div class="item">
+                 <div class="item wow fadeInUpBig ani-delay-1">
                    <div class="row">
                     <div class="col-xl-6">
                       <div class="card shadow testimonial-card">
@@ -869,7 +873,7 @@
                      </div>
                    </div>
                  </div>
-                 <div class="item">
+                 <div class="item wow fadeInUpBig ani-delay-1">
                    <div class="row">
                     <div class="col-xl-6">
                       <div class="card shadow testimonial-card">
@@ -897,7 +901,7 @@
                      </div>
                    </div>
                  </div>
-                 <div class="item">
+                 <div class="item wow fadeInUpBig ani-delay-1">
                    <div class="row">
                     <div class="col-xl-6">
                       <div class="card shadow testimonial-card">
@@ -925,7 +929,7 @@
                      </div>
                    </div>
                  </div>
-                 <div class="item">
+                 <div class="item wow fadeInUpBig ani-delay-1">
                    <div class="row">
                     <div class="col-xl-6">
                       <div class="card shadow testimonial-card">
@@ -970,7 +974,7 @@
            <div class="footer-container">
              <div class="row">
                <div class="col-12">
-                <div class="d-none d-md-block d-xl-block d-lg-block bg-primary px-5 py-5 rounded-lg news-letter-form">
+                <div class="d-none d-md-block d-xl-block d-lg-block bg-primary px-5 py-5 rounded-lg news-letter-form wow bounceIn ani-delay-2">
                   <div class="row d-flex align-items-center">
                     <div class="col-12 col-md-12 col-xl-6">
                       <div class="">
@@ -1100,9 +1104,8 @@
 </footer> 
     <script src="vendors/jquery.js"></script>
     <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendors/way_point/jqueryWaypoints.js"></script>
+    <script src="vendors/wow/wow.js"></script>
     <script src="vendors/owl_carousel/owl.carousel.js"></script>
-    <script src="vendors/mouse_wheel/jquery.mousewheel.min.js"></script>
     <script src="vendors/isotope/isotope.pkgd.min.js"></script>
     <script src="resources/js/script.js"></script>
 </body>

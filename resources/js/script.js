@@ -1,6 +1,15 @@
+/* -------------------------------PreLoader-------------------------------------   */
+$(window).on("load",function(){
+    $('.loader-container').fadeOut(500,function(){
+        $(this).remove();
+    }); 
+});
+
 $(window).scroll(function(){
     $(".mobile-nav-container").removeClass("active");
-})
+});
+/* -------------------------------for animation and wow------------------------------------   */
+new WOW().init();
 
 $(document).ready(function () { 
 
@@ -86,3 +95,17 @@ $('.owl-testi-container').owlCarousel({
 
     
 });
+
+//  --------------isotope for course section------------------
+$(window).on("load", function () {
+    //int isotope
+    $(".isotope-container").isotope({});
+    //filter items on buttom click
+    $("#isotope-filters").on("click", "button", function () {
+      var filterValue = $(this).attr("data-filter");
+      $(".isotope-container").isotope({ filter: filterValue });
+      $("#isotope-filters").find(".active").removeClass("active");
+      $(this).addClass("active");
+    });
+  });
+  
